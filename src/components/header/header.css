@@ -68,6 +68,7 @@ header{
   @media screen and (max-width: 600px) {
     header{
         height: 100vh;
+        padding-top: 3rem;
     }
     .header__socials,
     .scroll_down{
