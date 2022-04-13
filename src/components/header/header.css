@@ -73,4 +73,7 @@ header{
     .scroll_down{
         display: none;
     }
+    .me{
+        height: 40rem;
+    }
   }
