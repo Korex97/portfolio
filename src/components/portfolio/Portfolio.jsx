@@ -89,7 +89,7 @@ const Portfolio = () => {
 
                   {
                     demo.toLowerCase() === ""?(
-                      <button  href="javascript:void(0)" className='btn btn-primary'>Not yet Deployed</button>
+                      <button  className='btn btn-primary'>Not yet Deployed</button>
                     ):(
                       <a href={demo} className='btn btn-primary' target="_blank">Live Demo</a>
                     )
