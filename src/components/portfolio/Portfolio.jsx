@@ -81,7 +81,7 @@ const Portfolio = () => {
                 <div className="portfolio_item-cta">
                   {
                     github === ""? (
-                      <a href="javascript:void(0)" className='btn' target="_blank" rel="noreferrer">Private Repo</a>
+                      <button className='btn' target="_blank" rel="noreferrer">Private Repo</button>
                     ):(
                       <a href={github} className='btn' target="_blank" rel="noreferrer">Github</a>
                     )
@@ -89,7 +89,7 @@ const Portfolio = () => {
 
                   {
                     demo.toLowerCase() === ""?(
-                      <a  href="javascript:void(0)" className='btn btn-primary'>Not yet Deployed</a>
+                      <button  href="javascript:void(0)" className='btn btn-primary'>Not yet Deployed</button>
                     ):(
                       <a href={demo} className='btn btn-primary' target="_blank">Live Demo</a>
                     )
