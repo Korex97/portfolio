@@ -5,6 +5,8 @@ import IMG2 from "../../assets/porf.png";
 import IMG3 from "../../assets/vidapp.jpg";
 import IMG4 from "../../assets/saveLives.jpg";
 import IMG5 from "../../assets/employee.png";
+import IMG6 from "../../assets/abc.svg";
+import IMG7 from "../../assets/Screenshot 2023-02-07 222618.png";
 
 const data = [
   {
@@ -41,6 +43,20 @@ const data = [
     title: "An Employee Management System built with SpringBoot(Java) and AngularJs",
     github: "https://github.com/Korex97/employeeMangementSystem",
     demo: ""
+  },
+  {
+    id: 6,
+    image: IMG6,
+    title: "Cardify - A fintech platform that has three major system wallet, Exchange and Bills, worked mainly on the bills system",
+    github: "",
+    demo: "https://app.cardify.co/"
+  },
+  {
+    id: 7,
+    image: IMG7,
+    title: "Shortleters - A proptech system that deals with the booking, letting of shortlets apartments",
+    github: "",
+    demo: "https://beta.shortleters.com/"
   }
 ]
 
@@ -60,7 +76,14 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio_item-cta">
-                  <a href={github} className='btn' target="_blank" rel="noreferrer">Github</a>
+                  {
+                    github === ""? (
+                      <a href="void(0)" className='btn' target="_blank" rel="noreferrer">Private Repo</a>
+                    ):(
+                      <a href={github} className='btn' target="_blank" rel="noreferrer">Github</a>
+                    )
+                  }
+                  
                   <a href="void(0)" className='btn btn-primary'>Not yet Deployed</a>
 
                   {/* {
