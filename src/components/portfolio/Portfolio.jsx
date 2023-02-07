@@ -14,21 +14,24 @@ const data = [
     image: IMG1,
     title: "A School Information Management System",
     github: "https://github.com/Korex97/School-Information-System",
-    demo: "https://schl-info-system.herokuapp.com/"
+    // demo: "https://schl-info-system.herokuapp.com/"
+    demo: ""
   },
   {
     id: 2,
     image: IMG2,
     title: "Mphunds a Financial Assistant Website Built with Nodejs, ejs, and MongoDB",
     github: "https://github.com/Korex97/mphunds",
-    demo: "https://mphundss.herokuapp.com/"
+    demo: ""
+    // demo: "https://mphundss.herokuapp.com/"
   },
   {
     id: 3,
     image: IMG3,
     title: "A Video Chatting Application Built with Nodejs, ejs, socket.io, peerjs and express",
     github: "https://github.com",
-    demo: "https://vid-chatting.herokuapp.com/"
+    demo: ""
+    // demo: "https://vid-chatting.herokuapp.com/"
   },
   {
     id: 4,
@@ -78,21 +81,19 @@ const Portfolio = () => {
                 <div className="portfolio_item-cta">
                   {
                     github === ""? (
-                      <a href="void(0)" className='btn' target="_blank" rel="noreferrer">Private Repo</a>
+                      <a href="javascript:void(0)" className='btn' target="_blank" rel="noreferrer">Private Repo</a>
                     ):(
                       <a href={github} className='btn' target="_blank" rel="noreferrer">Github</a>
                     )
                   }
-                  
-                  <a href="void(0)" className='btn btn-primary'>Not yet Deployed</a>
 
-                  {/* {
+                  {
                     demo.toLowerCase() === ""?(
-                      <a href="#" className='btn btn-primary'>Not yet Deployed</a>
+                      <a  href="javascript:void(0)" className='btn btn-primary'>Not yet Deployed</a>
                     ):(
                       <a href={demo} className='btn btn-primary' target="_blank">Live Demo</a>
                     )
-                  } */}
+                  }
                 </div> 
               </article>
             )
