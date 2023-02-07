@@ -61,7 +61,7 @@ const Portfolio = () => {
                 <h3>{title}</h3>
                 <div className="portfolio_item-cta">
                   <a href={github} className='btn' target="_blank" rel="noreferrer">Github</a>
-                  <a href="#" className='btn btn-primary'>Not yet Deployed</a>
+                  <a href="void(0)" className='btn btn-primary'>Not yet Deployed</a>
 
                   {/* {
                     demo.toLowerCase() === ""?(
