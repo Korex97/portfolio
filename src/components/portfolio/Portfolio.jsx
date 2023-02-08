@@ -14,8 +14,8 @@ const data = [
     image: IMG1,
     title: "A School Information Management System",
     github: "https://github.com/Korex97/School-Information-System",
-    // demo: "https://schl-info-system.herokuapp.com/"
-    demo: ""
+    demo: "https://schl-info-system.herokuapp.com/"
+//     demo: ""
   },
   {
     id: 2,
