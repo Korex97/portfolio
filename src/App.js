@@ -7,7 +7,7 @@ import { Main } from './Main';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename={window.location.pathname || ""}>
         <Routes>
           <Route path='/' exact element={<Main />} />
         </Routes>      

@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "homepage": "https://github.com/Korex97/portfolio",
   "version": "1.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +22,9 @@
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +45,7 @@
     ]
   },
   "devDependencies": {
-    "compression-webpack-plugin": "^10.0.0"
+    "compression-webpack-plugin": "^10.0.0",
+    "gh-pages": "^5.0.0"
   }
 }
