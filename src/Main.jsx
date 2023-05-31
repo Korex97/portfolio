@@ -7,10 +7,23 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import Portfolio from './components/portfolio/Portfolio';
 import Services from './components/services/Services';
+import { ToastContainer } from 'react-toastify';
 
 export const Main = () => {
   return (
     <>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
         <Header />
         <Nav />
         <About />

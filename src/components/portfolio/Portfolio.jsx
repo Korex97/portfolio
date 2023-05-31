@@ -17,14 +17,14 @@ const data = [
     demo: "https://schl-info-system.herokuapp.com/"
 //     demo: ""
   },
-  {
-    id: 2,
-    image: IMG2,
-    title: "Mphunds a Financial Assistant Website Built with Nodejs, ejs, and MongoDB",
-    github: "https://github.com/Korex97/mphunds",
-    demo: ""
-    // demo: "https://mphundss.herokuapp.com/"
-  },
+  // {
+  //   id: 2,
+  //   image: IMG2,
+  //   title: "Mphunds a Financial Assistant Website Built with Nodejs, ejs, and MongoDB",
+  //   github: "https://github.com/Korex97/mphunds",
+  //   demo: ""
+  //   // demo: "https://mphundss.herokuapp.com/"
+  // },
   {
     id: 3,
     image: IMG3,

@@ -4,15 +4,22 @@ import {MdOutlineEmail} from "react-icons/md";
 import { BsWhatsapp } from 'react-icons/bs';
 import { useRef } from 'react';
 import emailjs from "emailjs-com";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contact = () => {
   const form = useRef();
+  const notify = (message) => {
+    toast(message);
+  } 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_0hpc3us', 'template_tw1nhuk', form.current, 'ns7zrfII77b1xyiSS')
       .then((result) => {
-          console.log(result.text);
+          
+          notify("Message sent");
       }, (error) => {
           console.log(error.text);
       });
@@ -20,8 +27,10 @@ const Contact = () => {
 
   };
 
+
   return (
-    <section id='contact'>
+    <>
+      <section id='contact'>
       <h5>Get in Touch</h5>
       <h2>Contact me</h2>
 
@@ -44,13 +53,15 @@ const Contact = () => {
         {/* Contact OPtions */}
 
         <form ref={form} onSubmit={e => sendEmail(e)}>
+        
           <input type="text" name='name' placeholder='Your Full Name'  required/>
           <input type="email" name='email' placeholder='Your Email' required />
           <textarea name="message" id="" cols="30" rows="7" placeholder='Your Message' required></textarea>
           <button type="submit" className="btn btn-primary">Send A Message</button>
         </form>
       </div>
-   </section>
+      </section>
+    </>
   )
 }
 
