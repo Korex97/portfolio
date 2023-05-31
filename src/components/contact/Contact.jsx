@@ -18,8 +18,7 @@ const Contact = () => {
 
     emailjs.sendForm('service_0hpc3us', 'template_tw1nhuk', form.current, 'ns7zrfII77b1xyiSS')
       .then((result) => {
-          
-          notify("Message sent");
+        notify("Message sent");
       }, (error) => {
           console.log(error.text);
       });
