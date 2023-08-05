@@ -7,6 +7,8 @@ import IMG4 from "../../assets/saveLives.jpg";
 import IMG5 from "../../assets/employee.png";
 import IMG6 from "../../assets/abc.svg";
 import IMG7 from "../../assets/Screenshot 2023-02-07 222618.png";
+import IMG8 from "../../assets/lightNG.png";
+import IMG9 from "../../assets/fagopay.jpg";
 
 const data = [
   {
@@ -50,7 +52,7 @@ const data = [
   {
     id: 6,
     image: IMG6,
-    title: "Cardify - A fintech platform that has three major system wallet, Exchange and Bills, worked mainly on the bills system",
+    title: "Cardify - A fintech platform that has three major system wallet, Exchange and Bills, worked mainly on the bills system . \n App available on both IOS and Android",
     github: "",
     demo: "https://app.cardify.co/"
   },
@@ -59,8 +61,22 @@ const data = [
     image: IMG7,
     title: "Shortleters - A proptech system that deals with the booking, letting of shortlets apartments",
     github: "",
-    demo: "https://beta.shortleters.com/"
-  }
+    demo: "https://app.shortleters.com/"
+  },
+  {
+    id: 8,
+    image: IMG8,
+    title: "LightNG - A fintech system that helps user purchase their electricity bill and manages payment for electricity",
+    github: "",
+    demo: "https://light.ng/"
+  },
+  {
+    id: 9,
+    image: IMG9,
+    title: "Fagopay - A fintech application that provides quasi-banking services for individuals and digital payment solutions for businesses and organisations in Nigeria and the rest of Africa. \n App available on both IOS and Android",
+    github: "",
+    demo: "https://fagopay.net/"
+  },
 ]
 
 const Portfolio = () => {
